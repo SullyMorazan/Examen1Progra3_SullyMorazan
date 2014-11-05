@@ -15,16 +15,13 @@ bool esMayuscula(char letra)
 
 if(letra=='A' || letra=='B' || letra=='C' || letra=='D' || letra=='E' || letra=='F' ||letra=='G' ||letra=='H' || letra=='I' ||
    letra=='J'|| letra=='K' || letra=='L' || letra=='M' || letra=='N' || letra=='O' || letra=='P' || letra=='Q' || letra=='R' ||
-   letra=='S')
-{
-     //||letra=='T'||letra=='U'||letra=='V'||letra=='W'||letra=='X'||letra=='Y'||letra=='Z');
+   letra=='S'||letra=='T'||letra=='U'||letra=='V'||letra=='W'||letra=='X'||letra=='Y'||letra=='Z')
         return true;
-   }
+
 else
-  {
     return false;
 }
-}
+
 
 //Devuelve true si todas las letras de palabra (dado) son mayusculas
 //Sugerencia, usar string.length() para saber la longitud de la palabra
