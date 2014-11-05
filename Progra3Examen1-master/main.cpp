@@ -27,15 +27,19 @@ else
 //Sugerencia, usar string.length() para saber la longitud de la palabra
 bool sonMayusculas(string palabra)
 {
-  /* for(int j=0; j<palabra.length()-1; j++)
+  int mayusculas = 0;
+  for(int j=0; j<palabra.length(); j++)
    {
- if(palabra[j]=='A' || palabra[j]=='B' || palabra[j]=='C' || palabra[j]=='D' || palabra[j])=='E' ||palabra[j]=='F' ||palabra[j]=='G' ||palabra[j]=='H' || palabra[j]=='I' ||
-  palabra[j]=='J'||palabra[j]=='K' || palabra[j]=='L' || palabra[j]=='M' || palabra[j]=='N' ||palabr[j]=='O' || palabra[j]=='P' || palabra[j]=='Q' || palabra[j]=='R' ||
-  palabra[j]=='S')
-    return true;
-    else false;
-}*/
-}
+ if(palabra.at(j)== 'A' || palabra.at(j)=='B' || palabra.at(j)=='C' || palabra.at(j)=='D' || palabra.at(j)=='E' ||palabra.at(j)=='F' ||palabra.at(j)=='G' ||palabra.at(j)=='H' || palabra.at(j)=='I' ||
+  palabra.at(j)=='J'||palabra.at(j)=='K' ||palabra.at(j)=='L' || palabra.at(j)=='M' || palabra.at(j)=='N' ||palabra.at(j)=='O' ||palabra.at(j)=='P' ||palabra.at(j)=='Q' || palabra.at(j)=='R' ||
+  palabra.at(j)=='S'||palabra.at(j)=='T'||palabra.at(j)=='U'||palabra.at(j)=='V'||palabra.at(j)=='W'||palabra.at(j)=='X'||palabra.at(j)=='Y'||palabra.at(j)=='Z')
+  mayusculas = mayusculas + 1;
+   }
+   if(mayusculas ==palabra.length())
+   return true;
+   else
+   return false;
+       }
 
 //Desreferencia num (dado), eleva al cuadrado el numero resultante y lo asigna a la posicion donde num esta apuntando
 void elevarAlCuadrado(int* num)
